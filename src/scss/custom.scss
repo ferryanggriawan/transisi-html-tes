@@ -1,0 +1,104 @@
+@import "./bootstrap/bootstrap.scss";
+
+.menu-card {
+  margin-bottom: 50px;
+
+  &.active {
+    .rect-icon {
+      border: 3px solid #3ccaf0;
+    }
+  }
+
+  .rect-icon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+
+    .fill-icon {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      align-self: center;
+      margin: auto;
+    }
+  }
+}
+
+.project-container {
+  .form-control {
+    border: none;
+    background: #3c3f54;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+  }
+}
+
+.main-container {
+  align-items: center;
+}
+
+.todo-container {
+  > .row {
+    min-height: calc(100vh - 20px);
+    max-height: calc(100vh - 20px);
+    border-radius: 20px;
+    background: white;
+    flex-direction: column;
+    overflow: auto;
+  }
+}
+
+.form-check-input {
+  width: 20px;
+  height: 20px;
+}
+
+.form-check-input[type="checkbox"] {
+  border-radius: 50%;
+}
+
+label {
+  color: #606374;
+}
+
+a {
+  text-decoration: none;
+}
+
+.avatar-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    background: #09f;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -10px;
+  }
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  align-items: center;
+}
+
+.list-group-item {
+  padding: 10px 0;
+}
